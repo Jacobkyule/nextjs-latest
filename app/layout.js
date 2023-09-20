@@ -7,8 +7,8 @@ export const metadata = {
   robots: "index,follow",
   googlebot: "index,follow",
   google: "translate",
-  
-  
+  theme_color: "#ffffff"
+   
 }
 export default function RootLayout({ children }) {
   return (

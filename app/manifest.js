@@ -10,6 +10,11 @@ export default function manifest() {
                 sizes: 'any',
                 type: 'image/x-icon'
               },
+              {
+                src: '/apple-touch-icon.png',
+                sizes: 'any',
+                type: 'apple-touch-icon'
+              },
             {
                 src: "/android-chrome-192x192.png",
                 sizes: "192x192",
