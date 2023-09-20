@@ -12,8 +12,8 @@ export default function manifest() {
               },
               {
                 src: '/apple-touch-icon.png',
-                sizes: 'any',
-                type: 'apple-touch-icon'
+                sizes: "180x180",
+                type: 'image/png'
               },
             {
                 src: "/android-chrome-192x192.png",
