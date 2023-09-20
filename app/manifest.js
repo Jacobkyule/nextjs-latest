@@ -2,6 +2,8 @@ export default function manifest() {
     return {
         name: "Jakes",
         short_name: "Jake",
+        description: 'Next.js App',
+        start_url: '/',
         icons: [
             {
                 src: "/android-chrome-192x192.png",
