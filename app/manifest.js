@@ -6,9 +6,15 @@ export default function manifest() {
         start_url: '/',
         icons: [
             {
+                src: '/favicon.ico',
+                sizes: 'any',
+                type: 'image/x-icon'
+              },
+            {
                 src: "/android-chrome-192x192.png",
                 sizes: "192x192",
-                type: "image/png"
+                type: "image/png",
+                purpose: "maskable"
             },
             {
                 src: "/android-chrome-512x512.png",
