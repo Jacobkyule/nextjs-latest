@@ -1,5 +1,5 @@
 import Product from "@/app/components/Product";
-
+import styles from '../../../page.module.css'
 export async function generateStaticParams() {
     const res = await fetch('https://dummyjson.com/products?limit=5&select=title,price');
     
@@ -24,8 +24,11 @@ export async function generateStaticParams() {
 export default async function Productpage({params}){
     const products = await getProducts(params.id);
     console.log({products});
-    return products.length > 0 && (
+    return ( 
+      <div className={styles.page}>
+     { products.length > 0 && (
             products.map(({ images, title, price, id, description, brand, category }) => (
+              
               <Product 
                 noButton
                 images={images}
@@ -36,6 +39,10 @@ export default async function Productpage({params}){
                 description={description}
                 key={id}
               />
+              
             ))
           )
+     }
+          </div>
+    )
 }
