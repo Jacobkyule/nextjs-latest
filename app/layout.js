@@ -4,6 +4,7 @@ import Navbar from "./components/Navigation";
 export const metadata = {
   title: 'jakes',
   description : "created by jake with next.js 13",
+  robots: "index,follow"
   
 }
 export default function RootLayout({ children }) {
