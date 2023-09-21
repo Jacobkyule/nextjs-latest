@@ -12,7 +12,8 @@ export default async function ProductsPage(){
     const products = await getProducts();
     return (
         <>
-        <h3 className={styles.prodHeading}>CheckOut our Products below</h3>
+        <div className={styles.productsPageLayout}>
+        <h3>Check of our products</h3>
         <div className={styles.page}>
         {
             products.length > 0 && (
@@ -27,6 +28,7 @@ export default async function ProductsPage(){
                 ))
             )
         }
+        </div>
         </div>
         </>
     )

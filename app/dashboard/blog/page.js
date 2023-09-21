@@ -1,4 +1,4 @@
-
+import styles from '../../page.module.css';
 import Link from 'next/link';
 
 const posts = [
@@ -22,6 +22,7 @@ export default function Blog(){
     
         return (
             <>
+            <div className={styles.blogPage}>
             <h2>These are the blogs</h2>
             <ul>
               {posts.map((post) => (
@@ -31,6 +32,7 @@ export default function Blog(){
                 </li>
               ))}
             </ul>
+            </div>
             </>
           )
             

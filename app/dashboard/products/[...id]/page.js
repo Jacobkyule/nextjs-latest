@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 
 export default async function Productpage({params}){
     const products = await getProducts(params.id);
-    console.log({products});
+  
     return ( 
       <div className={styles.page}>
      { products.length > 0 && (
