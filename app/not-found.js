@@ -3,9 +3,9 @@ import Link from 'next/link'
 export default function NotFound() {
   return (
     <div className={styles.errorPage}>
-      <h2>Not Found</h2>
+      <h2>My baad!..Not Found</h2>
       <p>Could not find requested resource</p>
-      <Link href="/">Return Home</Link>
+      <Link href="/" className={styles.backHome}>Return Home</Link>
     </div>
 
   )

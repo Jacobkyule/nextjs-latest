@@ -1,7 +1,9 @@
+import styles from '../page.module.css';
 export default function About() {
     return (
     <>
-    <h2>This is the dashboard!</h2>
+    <div className={styles.dashboardPage}>
+    </div>
     </>
     )
   }

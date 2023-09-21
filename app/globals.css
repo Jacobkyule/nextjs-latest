@@ -94,6 +94,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .text-blue {
   color: blue;
 }

@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-      <h1 className={styles.title}>E-Commerce</h1>
+      <h1 className={styles.title}>Portfolio</h1>
       <Navbar/>
       {children}
       </body>
