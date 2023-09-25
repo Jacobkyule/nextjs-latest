@@ -1,10 +1,14 @@
+.main {
+  position: relative;
+  top: 120px
+}
+
 .hero {
   width: 100%;
   height: 100vh;
   background-image: url('../public/Jakes\ logo.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -21,9 +25,9 @@
 }
 
 .description {
-  margin: 20px;
+margin: 20px;
 width: 20%;
-color: white;
+color: orangered;
 font-size: 20px;
 font-weight: bold;
 }
@@ -37,11 +41,18 @@ font-weight: bold;
 }
 
 .navbar {
+ position: fixed;
+ width: 100%;
+ height: 60px;
+ top: 50px;
  font-weight: bolder;
  font-size: 20px;
  display: flex;
  justify-content: space-around;
  padding: 20px;
+ background-color: white;
+ align-items: center;
+ z-index: 3;
 }
 
 .dashboardnav {
@@ -81,6 +92,10 @@ font-weight: bold;
 }
 .title {
   text-align: center;
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  z-index: 3;
 }
 .hr {
   height: 80vh;
@@ -193,3 +208,95 @@ font-weight: bold;
   color: #0056b3;
 }
 
+.profileSettings {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.settingsLink {
+color: orangered;
+}
+.menuButton {
+  border-radius: 50%;
+}
+.profPhoto {
+  border-radius: 50%;
+}
+.settingsIcon {
+  color: #0056b3;
+ width: 24px;
+ height: 24px;
+}
+.signOutButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.signOutIcon {
+  width: 24px;
+  height: 24px;
+}
+.menuItems{
+  background-color: white;
+  border: 2px solid orangered;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  padding: 20px;
+}
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #0056b3;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.googleSignIn {
+  color: orangered;
+  padding: 15px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5%;
+}
+.containerSignIn {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #007bff;
+}
+
+.signInHeading {
+  margin-bottom: 20px;
+  font-size: 35px;
+}  
+
+.signIn {
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}

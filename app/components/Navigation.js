@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import styles from '../page.module.css';
 import React from "react";
 import Link from "next/link";
+import SignInButton from '../components/SignInButton';
 
 const navLinks = [
     {
@@ -41,6 +42,7 @@ const Navbar =  () => {
             </Link>
         )
     })}
+            <SignInButton/>
     </div>
    </>
     )
