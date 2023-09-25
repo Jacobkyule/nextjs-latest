@@ -6,14 +6,12 @@ export default function Home() {
     <>
     <div className={styles.homepage} >
     <Image
-      className={styles.hero}
+      className={styles.Hero}
       fill
       src={hero}
       priority
       alt='logo'
     />
-    <h1 className={styles.heading}>Hey, im Jacob Kyule.</h1>
-    <p className={styles.description}>A talented software developer from Nairobi, KENYA.</p>
     </div>
    </>
   )
