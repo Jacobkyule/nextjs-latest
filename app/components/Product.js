@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function Product({ images, title, price, id, description, brand, category, noButton = false }){
     const imageURL = Array.isArray(images) && images.length > 0 ? images[0] : '';        
-
     return (
         <div >
         <div className={styles.product}>
         <div className={styles.imageContainer}>
+
                     <Image
                     width={200}
                     height={200}
