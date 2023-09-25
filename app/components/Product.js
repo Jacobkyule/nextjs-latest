@@ -1,5 +1,7 @@
 import ProductButton from "./ProductButton";
 import styles from '../page.module.css';
+import Image from "next/image";
+
 export default function Product({ images, title, price, id, description, brand, category, noButton = false }){
     const imageURL = Array.isArray(images) && images.length > 0 ? images[0] : '';        
 
@@ -7,8 +9,9 @@ export default function Product({ images, title, price, id, description, brand, 
         <div >
         <div className={styles.product}>
         <div className={styles.imageContainer}>
-                    <img
-                    className={styles.productImage}
+                    <Image
+                    width={200}
+                    height={200}
                     src={imageURL} 
                     alt={title}
                     />
