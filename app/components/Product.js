@@ -11,7 +11,7 @@ export default function Product({ images, title, price, id, description, brand, 
 
                     <Image
                     width={200}
-                    height={200}
+                    height={150}
                     src={imageURL} 
                     alt={title}
                     />
