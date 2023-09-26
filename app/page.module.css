@@ -4,6 +4,7 @@
 }
 
 .homepage {
+  position: relative;
   width: 100%;
   height: 100vh;
 
@@ -185,7 +186,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: white;
+  background-color: darkgray;
 }
 
 .backHome {
