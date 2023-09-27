@@ -7,16 +7,12 @@ import Link from "next/link";
 
 const navs = [
     {
-        name: 'Blogs',
-        href: '/dashboard/blog'
-    },
-    {
         name: 'Products',
         href: '/dashboard/products'
     },
     {
-        name: 'Users',
-        href: '/dashboard/users'
+        name: 'Posts',
+        href: '/dashboard/posts'
     }
 ];
 

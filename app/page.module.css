@@ -3,6 +3,18 @@
   top: 7.5rem;
 }
 
+.feed {
+  background-color: blue;
+  color: white;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center
+
+}
 .homepage {
   position: relative;
   width: 100%;
@@ -13,6 +25,7 @@
 .Hero {
   width: 100%;
   object-fit: cover;
+  z-index: -1;
 }
 
 .spinnerBody {
@@ -285,4 +298,21 @@ color: orangered;
   color: white;
   border-radius: 0.25rem;
   font-size: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputPage {
+  background-color: #0056b3;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
