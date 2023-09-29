@@ -4,6 +4,8 @@ import styles from '../../../page.module.css';
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
+export const dynamic = 'force-dynamic'; 
+
 export default function AddPost(){
 const [title, setTitle] = useState('');
 const [content, setContent] = useState('');
