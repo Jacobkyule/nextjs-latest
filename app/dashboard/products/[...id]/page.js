@@ -25,7 +25,7 @@ export default async function Productpage({params}){
     const products = await getProducts(params.id);
   
     return ( 
-      <div className={styles.page}>
+      <div className={styles.dynamicProductPage}>
      { products.length > 0 && (
             products.map(({ images, title, price, id, description, brand, category }) => (
               
