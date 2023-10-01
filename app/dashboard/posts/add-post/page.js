@@ -3,10 +3,24 @@ import React, { useState } from "react";
 import styles from '../../../page.module.css';
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useSession } from 'next-auth/react';
+import { redirect } from 'next/navigation';
+
+
 
 export const dynamic = 'force-dynamic'; 
 
-export default function AddPost(){
+ 
+
+export default  function AddPost(){
+    const { data: session } = useSession({
+        required: true,
+        onUnauthenticated() {
+        redirect('/signin?callbackUrl=/dashboard/posts/add-post')
+      }
+  })
+
+ 
 const [title, setTitle] = useState('');
 const [content, setContent] = useState('');
 const router = useRouter();
@@ -63,6 +77,7 @@ const handleSubmit = async (event) => {
                 />
             </label>
             <button type="submit">Submit</button>
+            <p>Thanks:{session?.user?.name}</p>
         </form>
         </main>
     )

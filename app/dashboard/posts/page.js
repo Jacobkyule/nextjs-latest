@@ -2,6 +2,9 @@ import Post from '@/app/components/post';
 import styles from '../../page.module.css'
 import prisma from '@/lib/prisma';
 import Link from 'next/link';
+import { getServerSession } from 'next-auth/next'
+import { redirect } from 'next/navigation'
+import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 
 export const dynamic = 'force-dynamic'; 
 
@@ -18,6 +21,12 @@ async function getPosts(){
 }
 
 export default async function PostsPage() {
+  const session = await getServerSession(authOptions)
+
+  if (!session) {
+    redirect('/signin?callbackUrl=/dashboard/posts')
+  }
+
   const posts = await getPosts();
   return (
     <>
