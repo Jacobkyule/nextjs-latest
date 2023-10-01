@@ -4,7 +4,7 @@
 }
 
 .feed {
-  background-color: blue;
+  background-color: #0056b3;
   color: white;
   width: 65%;
   height: 100%;
@@ -115,6 +115,7 @@
 }
 
 .about {
+  color: white;
   width: 50%;
   height: 100%;
   margin: 0 auto;
@@ -125,7 +126,7 @@
 }
 .aboutWrapper {
   width: 100%;
-  background-color: bisque;
+  background-color: #0056b3;
 }
 .contacts {
   height: 100vh;
