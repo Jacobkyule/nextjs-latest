@@ -67,7 +67,7 @@ const SignInButton = () => {
               </div>
               <Menu.Item>
                   <Link
-                    href='/profile'
+                    href={'/profile'}
                     className={styles.profileSettings}
                   >
                     <Cog8ToothIcon className={styles.settingsIcon}/>

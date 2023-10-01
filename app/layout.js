@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     >
       <body>
       <Provider>
-      <h1 className={styles.title}>Portfolio</h1>
+      <h1 className={styles.title}>Jacob Kyule</h1>
       <Navbar/>
       <main className={styles.main}>{children}</main>
       </Provider>

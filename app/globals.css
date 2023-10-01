@@ -100,10 +100,12 @@ li {
 
 .text-blue {
   color: blue;
+  font-size: 1rem;
 }
 
 .text-black {
   color: black;
+  font-size: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {

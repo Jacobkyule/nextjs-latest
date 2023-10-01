@@ -6,9 +6,9 @@
 .feed {
   background-color: blue;
   color: white;
-  width: 50%;
+  width: 65%;
   height: 100%;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,15 +44,16 @@
 }
 
 .dashboardnav {
-  font-size: 1.25rem;
   font-family: 'Courier New', Courier, monospace;
   display: flex;
   flex-direction: column;
+  width: auto;
   gap: 3.125rem;
-  height: 60vh;
-  padding: 1.25rem;
+  height: 100vh;
   font-weight: bold;
-  
+  background-color: orange;
+  position: fixed;
+  z-index: 10;
 }
 
 .dashboard {
@@ -65,19 +66,14 @@
 }
 
 .dashboardPage {
-  width: 100%;
+  margin: auto;
+  width: 65%;
   height: 100vh;
   background-color: #007bff;
 }
 
  
-.blogPage {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  margin: 1.25rem;
-  text-align: center;
-}
+
 .title {
   color: #fff;
   background-color: #0056b3;
@@ -88,7 +84,7 @@
   z-index: 5;
 }
 .hr {
-  height: 80vh;
+  height: 100vh;
   border: 2px solid gold;
 }
 
@@ -103,8 +99,8 @@
   padding: 1.25rem; 
   color: black;
   text-align: center; 
-  width: 18.75rem;
-  height: 31.25rem;
+  width: 16rem;
+  height: 25rem;
 }
 
  /*.productImage {
@@ -312,4 +308,13 @@ color: orangered;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.profile {
+  height: 100vh;
+  position: relative;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  
 }
