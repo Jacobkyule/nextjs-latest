@@ -46,7 +46,7 @@ export async function POST(request) {
       },
     });
 
-    return NextResponse.json({ result });
+    return NextResponse.json({ result }, { status: 200 });
   } catch (error) {
     console.error("Error creating post:", error);
     return NextResponse.json({ error: "An error occurred." }, { status: 500 });
