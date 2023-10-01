@@ -66,8 +66,10 @@
 }
 
 .dashboardPage {
-  margin: auto;
-  width: 65%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 5.625rem;
   height: 100vh;
   background-color: #007bff;
 }
@@ -83,10 +85,7 @@
   width: 100%;
   z-index: 5;
 }
-.hr {
-  height: 100vh;
-  border: 2px solid gold;
-}
+
 
 .product {
   display: flex;
